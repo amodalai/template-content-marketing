@@ -7,7 +7,6 @@
     "@amodalai/connection-devto",
     "@amodalai/connection-github"
   ],
-  "webTools": true,
   "memory": {
     "enabled": true
   }
