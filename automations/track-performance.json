@@ -1,0 +1,6 @@
+{
+  "title": "Track Content Performance",
+  "schedule": "0 9 * * *",
+  "prompt": "Check engagement metrics on our published content.\n\n1. Use the typefully connection to GET /drafts and filter for published posts in the last 30 days. For each, record likes, retweets, comments, and views.\n\n2. Use the devto connection to GET /articles/me/published. For each article published in the last 30 days, record positive_reactions_count, comments_count, and page_views_count.\n\nStore each post in content-performance using store_content_performance with platform, post_id, title, url, published_at, and the engagement metrics. Update existing entries.\n\nSummarize: total posts tracked, total engagement, top 3 performing posts.",
+  "writeEnabled": true
+}

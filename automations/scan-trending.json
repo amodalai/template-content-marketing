@@ -1,0 +1,6 @@
+{
+  "title": "Scan Trending Topics",
+  "schedule": "0 */4 * * *",
+  "prompt": "Scan for trending AI/agent content across all available sources:\n\n1. Use scan_trending to fetch from HN, Dev.to, Reddit, and GitHub (public APIs).\n2. Use the xpoz-mcp tools to search X/Twitter, Reddit, TikTok, and Instagram for trending posts about AI agents, MCP, LLMs, Claude, agentic frameworks, and developer tools. Look for posts with high engagement.\n3. Combine all results and store them using store_trending_topics_batch — pass the articles array directly as items. For social media results, format as: source='twitter'/'reddit'/'tiktok'/'instagram', title=post text (first 100 chars), url=post URL, score=like/upvote count, comments=reply count.\n\nSummarize what you found and stored from each source.",
+  "writeEnabled": true
+}

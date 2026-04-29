@@ -1,0 +1,14 @@
+{
+  "name": "content-marketing",
+  "version": "1.0.0",
+  "packages": [
+    "@amodalai/connection-typefully",
+    "@amodalai/connection-hackernews",
+    "@amodalai/connection-devto",
+    "@amodalai/connection-github"
+  ],
+  "webTools": true,
+  "memory": {
+    "enabled": true
+  }
+}
