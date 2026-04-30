@@ -1,16 +1,19 @@
 {
+  "title": "Content Marketing Agent",
+  "description": "Monitors trending topics across Hacker News, Dev.to, and Reddit, then drafts and schedules social media threads via Typefully. Tracks engagement and optimizes posting times.",
+  "platforms": ["Typefully", "Dev.to", "Hacker News", "GitHub"],
   "conversation": [
     {
       "role": "agent",
-      "text": "📊 Weekly Content Report — Apr 28\n\n**Top Performing Thread:**\n\"Why every AI agent framework is rebuilding the same 5 things\" — 847 impressions, 42 engagements, 12 link clicks\n\n**This Week:**\n• 3 threads published (Mon, Wed, Fri)\n• 2,340 total impressions (+18% WoW)\n• 89 total engagements\n• Best time slot: Tuesday 9am EST\n\n**Trending Topics Found:**\n• \"MCP servers are the new APIs\" — HN front page, 234 points\n• \"Why RAG is dead\" — Dev.to, 1.2k reactions\n• Claude Code launch — Reddit r/programming, 890 upvotes\n\n⚠ Instagram engagement down 12% — consider visual-first content this week."
+      "content": "📊 Weekly Content Report — Apr 28\n\n**Top Performing Thread:**\n\"Why every AI agent framework is rebuilding the same 5 things\" — 847 impressions, 42 engagements, 12 link clicks\n\n**This Week:**\n• 3 threads published (Mon, Wed, Fri)\n• 2,340 total impressions (+18% WoW)\n• 89 total engagements\n• Best time slot: Tuesday 9am EST\n\n**Trending Topics Found:**\n• \"MCP servers are the new APIs\" — HN front page, 234 points\n• \"Why RAG is dead\" — Dev.to, 1.2k reactions\n• Claude Code launch — Reddit r/programming, 890 upvotes\n\n⚠ Instagram engagement down 12% — consider visual-first content this week."
     },
     {
       "role": "user",
-      "text": "Draft a thread about the MCP topic"
+      "content": "Draft a thread about the MCP topic"
     },
     {
       "role": "agent",
-      "text": "🧵 Here's a draft thread on MCP servers:\n\n**Tweet 1 (hook):** MCP servers are replacing REST APIs for AI agents. Not because REST is bad — because agents need tools, not endpoints. Here's the difference 🧵\n\n**Tweet 2:** A REST API says: \"here are my endpoints, figure out what to call.\" An MCP server says: \"here are my capabilities, tell me what you need.\" Same data, completely different interface.\n\n**Tweet 3:** The shift: instead of your agent parsing OpenAPI specs and guessing which endpoint to hit, MCP gives it typed tools with descriptions. The agent just calls `search_issues` instead of figuring out `GET /repos/:owner/:repo/issues?state=open&labels=bug`.\n\n**Tweet 4:** This matters because error rates drop. Agents don't hallucinate endpoint paths. And when a tool changes, the server updates — the agent doesn't need new prompt engineering.\n\n**Tweet 5 (CTA):** We built our entire agent runtime on this pattern. Every connection is an MCP server or a REST-to-MCP bridge. Agents get tools, not endpoints.\n\nWhat do you think about this — want to hook or build the thread body differently?\n\n📎 I'll generate a header image once you approve."
+      "content": "🧵 Here's a draft thread on MCP servers:\n\n**Tweet 1 (hook):** MCP servers are replacing REST APIs for AI agents. Not because REST is bad — because agents need tools, not endpoints. Here's the difference 🧵\n\n**Tweet 2:** A REST API says: \"here are my endpoints, figure out what to call.\" An MCP server says: \"here are my capabilities, tell me what you need.\" Same data, completely different interface.\n\n**Tweet 3:** The shift: instead of your agent parsing OpenAPI specs and guessing which endpoint to hit, MCP gives it typed tools with descriptions. The agent just calls `search_issues` instead of figuring out `GET /repos/:owner/:repo/issues?state=open&labels=bug`.\n\n**Tweet 4:** This matters because error rates drop. Agents don't hallucinate endpoint paths. And when a tool changes, the server updates — the agent doesn't need new prompt engineering.\n\n**Tweet 5 (CTA):** We built our entire agent runtime on this pattern. Every connection is an MCP server or a REST-to-MCP bridge. Agents get tools, not endpoints.\n\nWhat do you think about this — want to hook or build the thread body differently?\n\n📎 I'll generate a header image once you approve."
     }
   ]
 }

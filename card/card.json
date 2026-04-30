@@ -1,6 +1,20 @@
 {
   "title": "Content Marketing Agent",
   "tagline": "Scans trending topics, drafts threads with images, schedules to Typefully, tracks engagement.",
+  "platforms": ["Typefully", "Dev.to", "Hacker News", "GitHub"],
+  "snippet": "📊 2,340 impressions (+18% WoW)\n🧵 3 threads published this week\n🔥 \"MCP servers\" trending on HN\n📎 Draft ready — approve to schedule",
+  "thumbnailConversation": [
+    {"role": "agent", "content": "📊 Weekly Content Report — Apr 28\n\n• 3 threads published (Mon, Wed, Fri)\n• 2,340 total impressions (+18% WoW)\n• Best time slot: Tuesday 9am EST"},
+    {"role": "user", "content": "Draft a thread about the MCP topic"},
+    {"role": "agent", "content": "🧵 Here's a 5-tweet thread on MCP servers. Tweet 1 (hook): MCP servers are replacing REST APIs for AI agents..."}
+  ],
+  "connections": ["Typefully", "Dev.to", "Hacker News", "GitHub"],
+  "skillSummaries": [
+    "Scans HN, Dev.to, Reddit for trending topics",
+    "Drafts Twitter/LinkedIn threads from trends",
+    "Schedules posts via Typefully",
+    "Weekly engagement report with metrics"
+  ],
   "author": "@amodal",
   "verified": true
 }
